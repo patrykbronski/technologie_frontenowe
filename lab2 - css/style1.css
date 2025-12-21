@@ -1,0 +1,18 @@
+body{
+    font-family: Impact;
+}
+
+h2{
+    font-family: Courier;
+    letter-spacing: 8px;
+}
+
+.akapit{
+    font-style: underline;
+    background-color: rgb(229, 255, 0);
+}
+
+#identyfikator{
+    font-weight: bold;
+    background-color: rgb(255, 200, 0);
+}

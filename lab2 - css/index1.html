@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patryk Broński zad.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="To jest opis strony internetowej" />
+    <meta name="author" content="Patryk Broński" />
+    <style>
+        body{
+            font-family: Verdana;
+        }
+
+        h2{
+            font-family: impact;
+            letter-spacing: 8px;
+        }
+
+        .akapit{
+            font-style: italic;
+            background-color: rgb(0, 255, 60);
+        }
+
+        #identyfikator{
+            font-weight: bold;
+            background-color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <h1 style="color: blue">Jestem studentem III roku informatyki.</h1>
+    <p style="font-size: 20px;">To jest mój pierwszy dokument HTML</p>
+    <h2>To jest nagłówek h2</h2>
+    <p class="akapit">To jest element formatowany przez odwołanie do klasy</p>
+    <p id="identyfikator">To jest element formatowany przez odwołanie do ID</p>
+</body>
+
+</html>
+
+<!-- W css największy priorytet ma styl nadany inline czyli bezpośrednio w tagu HTML, później style wewnętrzne czyli tag style w sekcji head, a na końcu style zewnętrzne czyli te w osobnym pliku css.
+
+Najlepszą praktyką jest stosowanie styli zewnętrznych, ponieważ mamy wszystkie style w jednym konkretnym miejscu. Ponadto oddzielamy strukturę HTML od wyglądu w CSS, dzięki czemu utrzymujemy porządek w kodzie. Bardzo łatwo i szybko wprowadza się zmiany. Osobiście uważam, że ten sposób nie ma żadnych wad.
+
+Style wewnętrze w sekcji head można ewentualnie zastosować kiedy tworzymy jedną stronę np. sam landing page bez wielu zakładek i widoków, do drobnych poprawek dla konkretnej podstrony lub do testów i prototypów. Zaletą jest to, że nie trzeba tworzyć osobnego pliku, a style danej strony są odizolowane od pozostałych. Niestety przez to plik html staje się chaotyczny, a taki projekt jest dużo trudniej utrzymać kiedy się rozrasta.
+
+Style inline używa się tylko w wyjątkowych sytuacjach, np. kiedy jednorazowo trzeba wyróżnić konkretny element, albo kiedy jakaś zautomatyzowana zmiana wyglądu wpływa na dany element nie tak jak chcemy - wtedy nadpisujemy tamten styl tym, który chcemy. Niestety powoduje to bardzo duży bałagan, im więcej takich pojedynczych zmian w inline tym gorzej. Ponadto nadpisywane są klasy co utrudnia rozbudowę i zaczyna mylić. Co więcej - ten sposób nie pozwala użyć tego samego stylu na drugim elemencie, dlatego lepiej używać klas. -->
+
+
+<!--
+    DOCTYPE jest ważny, ponieważ za jego sprawą przeglądarka wie, że ma interpretować
+    kod w najnowszych standardach HTML i CSS, dzięki czemu strona wyświetla się poprawnie 
+
+    Sekcja HEAD pełni rolę - jak sama nazwa wskazuje - głowy dokumentu html.
+    Zawiera dane, które nie są widoczne w warstwie wizualnej w przeglądarce,
+    a służą jedynie jako informacje np. o tytule strony (to akurat jest widoczne
+    na karcie przeglądarki), o użytych plikach stylu, skryptów czy o kodowaniu znaków
+
+    Meta tagi służą do opisywania strony internetowej dla przeglądarek i wyszukiwarek.
+-->
