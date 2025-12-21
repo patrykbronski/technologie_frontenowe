@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation Showcase</title>
+    <link rel="stylesheet" href="style6.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>CSS Animation Showcase</h1>
+            <p>Demonstracja transitions, transforms 2D i keyframe animations. Najedź na kafelki, aby zobaczyć efekty.
+            </p>
+        </header>
+
+        <main class="panel">
+            <div class="panel__head">
+                <h2>Efekty</h2>
+                <span>Hover / animacje</span>
+            </div>
+
+            <div class="panel__body">
+                <section class="showcase">
+
+                    <!-- Część A: Transitions -->
+                    <article class="tile t-bg">
+                        <h3>A18 – Transition: tło na hover</h3>
+                        <p>background-color + transition</p>
+                        <div class="demoBox">Najedź</div>
+                    </article>
+
+                    <article class="tile t-scale">
+                        <h3>A19 – Transition: scale</h3>
+                        <p>transform: scale + transition</p>
+                        <div class="demoBox">Najedź</div>
+                    </article>
+
+                    <article class="tile t-ease">
+                        <h3>A20 – Timing: ease</h3>
+                        <p>Przesunięcie kropki z ease</p>
+                        <div class="demoBox">
+                            <div class="timingPill">
+                                <div class="timingDot"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-easeio">
+                        <h3>A20 – Timing: ease-in-out</h3>
+                        <p>Łagodny start i stop</p>
+                        <div class="demoBox">
+                            <div class="timingPill">
+                                <div class="timingDot"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-bezier">
+                        <h3>A20 – Timing: cubic-bezier</h3>
+                        <p>Własna krzywa czasowa</p>
+                        <div class="demoBox">
+                            <div class="timingPill">
+                                <div class="timingDot"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-delay">
+                        <h3>A21 – Transition-delay: kaskada</h3>
+                        <p>Słupki startują z opóźnieniem</p>
+                        <div class="demoBox">
+                            <div class="cascade">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Część B: Transforms 2D -->
+                    <article class="tile t-translate">
+                        <h3>B18 – Transform 2D: translate</h3>
+                        <p>Przesunięcie elementu</p>
+                        <div class="demoBox">
+                            <div class="transformTarget">BOX</div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-rotate">
+                        <h3>B19 – Transform 2D: rotate</h3>
+                        <p>Obrót + transform-origin</p>
+                        <div class="demoBox">
+                            <div class="transformTarget">BOX</div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-scale2">
+                        <h3>B20 – Transform 2D: scale</h3>
+                        <p>Skalowanie</p>
+                        <div class="demoBox">
+                            <div class="transformTarget">BOX</div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-skew">
+                        <h3>B21 – Transform 2D: skew</h3>
+                        <p>Pochylenie</p>
+                        <div class="demoBox">
+                            <div class="transformTarget">BOX</div>
+                        </div>
+                    </article>
+
+                    <article class="tile t-combo">
+                        <h3>B22 – Kombinacja transformacji</h3>
+                        <p>translate + rotate + scale + skew</p>
+                        <div class="demoBox">
+                            <div class="transformTarget">BOX</div>
+                        </div>
+                    </article>
+
+                    <!-- Część C: Keyframe Animations -->
+                    <article class="tile">
+                        <h3>C16 – Pulsujący element</h3>
+                        <p>scale + opacity</p>
+                        <div class="demoBox">
+                            <div class="pulseDot"></div>
+                        </div>
+                    </article>
+
+                    <article class="tile">
+                        <h3>C17 – Spinner / loader</h3>
+                        <p>Obrót w pętli</p>
+                        <div class="demoBox">
+                            <div class="spinner"></div>
+                        </div>
+                    </article>
+
+                    <article class="tile">
+                        <h3>C18 – Wejście tekstu</h3>
+                        <p>slideIn + fadeIn</p>
+                        <div class="demoBox">
+                            <div class="slideInText">Witaj w CSS</div>
+                        </div>
+                    </article>
+
+                    <article class="tile">
+                        <h3>C19 – infinite + alternate</h3>
+                        <p>Ruch w obie strony</p>
+                        <div class="demoBox">
+                            <div class="floatBadge">floating</div>
+                        </div>
+                    </article>
+
+                    <article class="tile">
+                        <h3>C20 – Animacja wieloetapowa</h3>
+                        <p>Więcej niż 0% i 100%</p>
+                        <div class="demoBox">
+                            <div class="multiStep"></div>
+                        </div>
+                    </article>
+
+                </section>
+
+                <p class="note">
+                    Wskazówka: większość animacji opiera się o <strong>transform</strong> i <strong>opacity</strong> dla
+                    lepszej wydajności.
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

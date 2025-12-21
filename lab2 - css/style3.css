@@ -1,108 +1,108 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 ul {
-    list-style-type:upper-latin;
+	list-style-type: upper-latin;
 }
 
 ul li {
-    padding: 3px;
-    margin-top: -5px;
-    margin-left: 30px;
+	padding: 3px;
+	margin-top: -5px;
+	margin-left: 30px;
 }
 
 ul li:nth-child(even) {
-    background-color: lightblue;
+	background-color: lightblue;
 }
 
 ol {
-    list-style-type: lower-alpha;
-    border-left: 2px solid black;
-    margin-left: 62px;
+	list-style-type: lower-alpha;
+	border-left: 2px solid black;
+	margin-left: 62px;
 }
 
-ol li ol{
-    border-left: none;
+ol li ol {
+	border-left: none;
 }
 
 dl {
-    margin-top: 60px;
-    margin-bottom: 60px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 dl dt {
-    margin-left: 5vw;
-    font-weight: bold;
-    font-size: 18px;
-    
+	margin-left: 5vw;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 dl dd {
-    padding-left: 10vw;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 2px dotted gray;
+	padding-left: 10vw;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 2px dotted gray;
 }
 
 table {
-    border-collapse: collapse;
-    max-width: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 60px 40px 40px 40px;
+	border-collapse: collapse;
+	max-width: 100%;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	margin: 60px 40px 40px 40px;
 }
 
-table thead, table th {
-    background-color: lightskyblue;
-    padding: 12px;
-    border-bottom: solid 4px black;
+table thead,
+table th {
+	background-color: lightskyblue;
+	padding: 12px;
+	border-bottom: solid 4px black;
 }
 
 table td {
-    padding: 5px 0px 5px 10px;
+	padding: 5px 0px 5px 10px;
 }
 
 table tr {
-    transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
 table tr:nth-child(2n) {
-    background-color: rgb(243, 243, 243);
+	background-color: rgb(243, 243, 243);
 }
 
-table tr:hover{
-    background-color:rgb(174, 224, 255);
+table tr:hover {
+	background-color: rgb(174, 224, 255);
 }
 
 table tfoot tr {
-    padding-top: 30px;
-    background-color: rgb(255, 226, 226);
+	padding-top: 30px;
+	background-color: rgb(255, 226, 226);
 }
 
 table tfoot td:last-child {
-    padding: 30px 10px 20px 10px;
+	padding: 30px 10px 20px 10px;
 }
 
 .demonstration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .demonstration_container {
-    width: 300px;
-    padding: 20px;
-    border: 5px solid black;
-    margin-bottom: 40px;
+	width: 300px;
+	padding: 20px;
+	border: 5px solid black;
+	margin-bottom: 40px;
 }
 
 .contentbox {
-    box-sizing: content-box;
-    background-color: rgb(238, 253, 255);
+	box-sizing: content-box;
+	background-color: rgb(238, 253, 255);
 }
 
 .borderbox {
-    box-sizing: border-box;
-    background-color: rgb(255, 226, 226);
+	box-sizing: border-box;
+	background-color: rgb(255, 226, 226);
 }

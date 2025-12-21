@@ -11,60 +11,97 @@
 
     <h1>Moja galeria multimedialna</h1>
 
-
     <section>
         <h2>Galeria obrazów</h2>
 
+        <!--
+            3 obrazy osadzone przez <img> – używam tego, gdy obraz jest tylko ilustracją
+            i nie potrzebuję dodatkowego podpisu w treści.
+            Każdy ma alt + width + height, a jeden ma loading="lazy" dla wydajności.
+        -->
+        <img src="images4/pejzaz.jpg" alt="Górski pejzaż" width="400" height="250">
+        <img src="images4/miasto.jpg" alt="Ulica starego miasta" width="400" height="250">
+        <img src="images4/las.jpg" alt="Las" width="400" height="250" loading="lazy">
 
-        <img src="images/pejzaz1.jpg" alt="Górski pejzaż o zachodzie słońca" width="400" height="250">
-        <img src="images/miasto.jpg" alt="Panorama miasta nocą" width="400" height="250">
-        <img src="images/las.jpg" alt="Las oświetlony promieniami słońca" width="400" height="250" loading="lazy">
-
-
+        <!--
+            2 obrazy osadzone przez <figure> + <figcaption> – używam tego, gdy obraz jest częścią treści
+            i ma mieć podpis (opis widoczny dla użytkownika, semantycznie powiązany z obrazem).
+        -->
         <figure>
-            <img src="images/morze.jpg" alt="Morze z delikatnymi falami" width="400" height="250">
+            <img src="images4/morze.jpg" alt="Morze z delikatnymi falami" width="400" height="250">
             <figcaption>Spokojne morze o poranku</figcaption>
         </figure>
 
         <figure>
-            <img src="images/jezioro.jpg" alt="Jezioro otoczone górami" width="400" height="250">
+            <img src="images4/jezioro.jpg" alt="Jezioro otoczone górami" width="400" height="250">
             <figcaption>Jezioro położone w dolinie górskiej</figcaption>
         </figure>
-
-        <!--
-            Użyłem zwykłych <img> dla prostych ilustracji, które nie wymagają dodatkowego opisu,
-            natomiast <figure> + <figcaption> tam, gdzie obraz jest częścią treści i potrzebuje podpisu.
-            Atrybut loading="lazy" przy jednym z obrazów poprawia wydajność, bo wczytuje grafikę dopiero,
-            gdy użytkownik przewinie stronę w jej okolice.
-        -->
     </section>
 
     <hr>
 
-    < <section>
+    <section>
         <h2>Galeria wideo</h2>
 
+        <!--
+            <video> z controls daje użytkownikowi sterowanie odtwarzaniem.
+            Dodaję dwa formaty (<source> mp4 i webm), aby zwiększyć kompatybilność przeglądarek.
+            Atrybut poster wyświetla miniaturkę przed uruchomieniem filmu.
+            Tekst wewnątrz <video> jest fallbackiem, gdy przeglądarka nie obsługuje elementu.
+        -->
         <video controls width="640" height="360" poster="video/poster.jpg">
-            <source src="video/przykladowe-wideo.mp4" type="video/mp4">
-            <source src="video/przykladowe-wideo.webm" type="video/webm">
+            <source src="video4/video1.mp4" type="video/mp4">
             Twoja przeglądarka nie obsługuje elementu video. Proszę pobrać plik wideo bezpośrednio z serwera.
         </video>
+        <video controls width="640" height="360" poster="video/poster.jpg">
+            <source src="video4/video2.webm" type="video/webm">
+            Twoja przeglądarka nie obsługuje elementu video. Proszę pobrać plik wideo bezpośrednio z serwera.
+        </video>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Galeria audio</h2>
 
         <!--
-            Użyłem elementu <video> z atrybutem controls, aby użytkownik mógł samodzielnie sterować odtwarzaniem.
-            Dodałem minimum dwa źródła (<source>) w różnych formatach (mp4, webm), żeby zwiększyć zgodność
-            z różnymi przeglądarkami. Tekst w środku <video> jest wyświetlany, gdy przeglądarka nie wspiera tego
-            elementu. Atrybut poster pokazuje miniaturkę przed uruchomieniem filmu.
+            <audio> z controls pozwala odtwarzać dźwięk w przeglądarce.
+            Dwa źródła (mp3 i ogg) zwiększają kompatybilność.
+            Tekst jest fallbackiem, gdy audio nie jest wspierane.
         -->
-        </section>
+        <audio controls>
+            <source src="audio4/audio1.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje elementu audio. Proszę pobrać plik dźwiękowy bezpośrednio z serwera.
+        </audio>
+        <audio controls>
+            <source src="audio4/audio2.ogg" type="audio/ogg">
+            Twoja przeglądarka nie obsługuje elementu audio. Proszę pobrać plik dźwiękowy bezpośrednio z serwera.
+        </audio>
+    </section>
 
-        <hr>
+    <hr>
 
+    <section>
+        <h2>Osadzona treść zewnętrzna</h2>
 
-        <section>
-            <h2>Galeria audio</h2>
+        <!--
+            <iframe> z YouTube jako treść zewnętrzna.
+            Atrybuty bezpieczeństwa:
+            - allowfullscreen: pozwala na pełny ekran
+            - referrerpolicy: ogranicza dane referera
+        -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s4BibernJxU?si=ud3O204asYH_ZEfy"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
 
-            <audio controls>
-                <source src="audio/przykladowy-utwor.mp3" type="audio/mpeg">
-                <source src="audio/przykladowy-utwor.ogg" type="audio/ogg">
-                Twoja przeglądarka nie obsługuje elementu audio. Proszę pobrać plik dźwiękowy bezpośrednio z serwera.
+        <!--
+
+            loading="lazy" zmniejsza koszt ładowania przy starcie strony.
+        -->
+    </section>
+
+</body>
+
+</html>

@@ -36,9 +36,11 @@
         <dt>DOCTYPE</dt>
         <dd>to deklaracja typu dokumentu, która informuje przeglądarkę o wersji HTML.</dd>
         <dt>Tag</dt>
-        <dd>to element składający się z nazwy, otoczony nawiasami ostrymi, np. p lub h1, który definiuje strukturę lub treść strony. </dd>
+        <dd>to element składający się z nazwy, otoczony nawiasami ostrymi, np. p lub h1, który definiuje strukturę lub
+            treść strony. </dd>
         <dt>Atrybut</dt>
-        <dd>to dodatkowa informacja lub właściwość dodana do tagu, określająca jego zachowanie lub wygląd (np. href w tagu a). </dd>
+        <dd>to dodatkowa informacja lub właściwość dodana do tagu, określająca jego zachowanie lub wygląd (np. href w
+            tagu a). </dd>
         <dt>HTML</dt>
         <dd>HyperText Markup Language - język znaczników używany do tworzenia stron internetowych.</dd>
         <dt>CSS</dt>
@@ -62,68 +64,73 @@
     </ol>
 
 
-<table>
-    <thead>
-        <tr>
-            <th>Nazwa tagu</th>
-            <th>Przeznaczenie</th>
-            <th>Przykład użycia</th>
-            <th>Czy wymaga zamknięcia?</th>
-        </tr>
-  </thead>
+    <table>
+        <thead>
+            <tr>
+                <th>Nazwa tagu</th>
+                <th>Przeznaczenie</th>
+                <th>Przykład użycia</th>
+                <th>Czy wymaga zamknięcia?</th>
+            </tr>
+        </thead>
 
-  <tbody>
-        <tr>
-            <td><code>&lt;p&gt;</code></td>
-            <td>Tworzy akapit tekstu.</td>
-            <td><code>&lt;p&gt;To jest akapit tekstu.&lt;/p&gt;</code></td>
-            <td>Tak</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Tworzy akapit tekstu.</td>
+                <td><code>&lt;p&gt;To jest akapit tekstu.&lt;/p&gt;</code></td>
+                <td>Tak</td>
+            </tr>
 
-        <tr>
-            <td><code>&lt;a&gt;</code></td>
-            <td>Tworzy odnośnik (link) do innej strony lub sekcji.</td>
-            <td><code>&lt;a href="https://example.com"&gt;Kliknij mnie&lt;/a&gt;</code></td>
-            <td>Tak</td>
-        </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Tworzy odnośnik (link) do innej strony lub sekcji.</td>
+                <td><code>&lt;a href="https://example.com"&gt;Kliknij mnie&lt;/a&gt;</code></td>
+                <td>Tak</td>
+            </tr>
 
-        <tr>
-            <td><code>&lt;img&gt;</code></td>
-            <td>Wstawia obrazek na stronę.</td>
-            <td><code>&lt;img src="obraz.jpg" alt="Opis obrazka"&gt;</code></td>
-            <td>Nie</td>
-        </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Wstawia obrazek na stronę.</td>
+                <td><code>&lt;img src="obraz.jpg" alt="Opis obrazka"&gt;</code></td>
+                <td>Nie</td>
+            </tr>
 
-        <tr>
-            <td><code>&lt;table&gt;</code></td>
-            <td>Definiuje strukturę tabeli w HTML.</td>
-            <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
-            <td>Tak</td>
-        </tr>
-        <tr>
-            <td><code>&lt;tr&gt;, &lt;td&gt;</code></td>
-            <td>Zawiera wiersze i komórki tabeli przy pomocy tagów <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>.</td>
-            <td><code>&lt;tr&gt;&lt;td&gt;Komórka&lt;/td&gt;&lt;/tr&gt;</code></td>
-            <td>Tak</td>
-        </tr>
-  </tbody>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Definiuje strukturę tabeli w HTML.</td>
+                <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+                <td>Tak</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;, &lt;td&gt;</code></td>
+                <td>Zawiera wiersze i komórki tabeli przy pomocy tagów <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>,
+                    <code>&lt;td&gt;</code>.
+                </td>
+                <td><code>&lt;tr&gt;&lt;td&gt;Komórka&lt;/td&gt;&lt;/tr&gt;</code></td>
+                <td>Tak</td>
+            </tr>
+        </tbody>
 
-  <tfoot>
-        <tr>
-            <td colspan="4">Niektóre tagi HTML, takie jak <code>&lt;img&gt;</code> czy <code>&lt;br&gt;</code>, nie wymagają zamknięcia - są tzw. „void elements”.</td>
-        </tr>
-  </tfoot>
-</table>
+        <tfoot>
+            <tr>
+                <td colspan="4">Niektóre tagi HTML, takie jak <code>&lt;img&gt;</code> czy <code>&lt;br&gt;</code>, nie
+                    wymagają zamknięcia - są tzw. „void elements”.</td>
+            </tr>
+        </tfoot>
+    </table>
 
-<section class="demonstration">
-    <div class="demonstration_container contentbox">
-            ContentBox mimo nadanego rozmiaru pod wpływem nadania paddingu, bordera etc. rozszerza kontener.
-    </div>
-    <div class="demonstration_container borderbox">
-            BorderBox pozwala na zachowanie nadanego pierwotnie rozmiaru elementu. "Ściska" padding, border etc. w środku, a nie rozszerza kontener dodatkowo.
-    </div>
-</section>
+    <section class="demonstration">
+        <div class="demonstration_container contentbox">
+            ContentBox mimo nadanego rozmiaru, pod wpływem nadania paddingu, bordera etc. rozszerza kontener.
+        </div>
+        <div class="demonstration_container borderbox">
+            BorderBox pozwala na zachowanie nadanego pierwotnie rozmiaru elementu. "Ściska" padding, border etc. w
+            środku, a nie rozszerza kontenera dodatkowo.
+        </div>
+    </section>
 
 
 </body>
+
 </html>
