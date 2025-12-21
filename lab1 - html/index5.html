@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Kompleksowy formularz kontaktowy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
     <h1>Formularz rejestracyjny / kontaktowy</h1>
@@ -16,25 +18,13 @@
 
             <div>
                 <label for="fullname">Imię i nazwisko:</label>
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    required
-                    minlength="2"
-                    maxlength="100"
-                    autocomplete="name"
-                    data-validation-type="name">
+                <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="100"
+                    autocomplete="name" data-validation-type="name">
             </div>
 
             <div>
                 <label for="dob">Data urodzenia:</label>
-                <input
-                    type="date"
-                    id="dob"
-                    name="dob"
-                    required
-                    data-validation-type="date">
+                <input type="date" id="dob" name="dob" required data-validation-type="date">
             </div>
 
             <div>
@@ -51,67 +41,41 @@
             </div>
         </fieldset>
 
-        <!-- ================== DANE KONTAKTOWE I KONTO ================== -->
+
         <fieldset>
             <legend>Dane kontaktowe i konto</legend>
 
             <div>
                 <label for="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    autocomplete="email"
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                    data-validation-type="email">
+                <input type="email" id="email" name="email" required autocomplete="email"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" data-validation-type="email">
             </div>
 
             <div>
                 <label for="phone">Telefon (opcjonalny):</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+48 123 456 789"
-                    autocomplete="tel"
+                <input type="tel" id="phone" name="phone" placeholder="+48 123 456 789" autocomplete="tel"
                     pattern="\+?[0-9\s-]{7,15}">
             </div>
 
             <div>
                 <label for="website">Strona www (opcjonalnie):</label>
-                <input
-                    type="url"
-                    id="website"
-                    name="website"
-                    autocomplete="url">
+                <input type="url" id="website" name="website" autocomplete="url">
             </div>
 
             <div>
                 <label for="password">Hasło:</label>
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    required
-                    minlength="8"
-                    autocomplete="new-password"
+                <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password"
                     data-validation-type="password">
             </div>
 
             <div>
                 <label for="confirm_password">Potwierdź hasło:</label>
-                <input
-                    type="password"
-                    id="confirm_password"
-                    name="confirm_password"
-                    required
-                    minlength="8"
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="8"
                     autocomplete="new-password">
             </div>
         </fieldset>
 
-        <!-- ================== INFORMACJE DODATKOWE ================== -->
+
         <fieldset>
             <legend>Informacje dodatkowe</legend>
 
@@ -154,55 +118,36 @@
 
             <div>
                 <label for="experience">Poziom doświadczenia (0–10):</label><br>
-                <input
-                    type="range"
-                    id="experience"
-                    name="experience"
-                    min="0"
-                    max="10"
-                    step="1"
-                    value="3"
+                <input type="range" id="experience" name="experience" min="0" max="10" step="1" value="3"
                     data-validation-type="range">
                 <span>(0 - początkujący, 10 - ekspert)</span>
             </div>
 
             <div>
                 <label for="cv">Prześlij CV (PDF lub DOC):</label>
-                <input
-                    type="file"
-                    id="cv"
-                    name="cv"
-                    accept=".pdf,.doc">
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc">
             </div>
 
             <div>
                 <label for="message">Wiadomość:</label><br>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    maxlength="500"
+                <textarea id="message" name="message" rows="5" maxlength="500"
                     placeholder="Napisz tutaj swoją wiadomość (maks. 500 znaków)..."></textarea>
             </div>
         </fieldset>
 
-        <!-- ================== ZGODY ================== -->
+
         <fieldset>
             <legend>Zgody</legend>
 
             <div>
-                <input
-                    type="checkbox"
-                    id="terms"
-                    name="terms"
-                    required>
+                <input type="checkbox" id="terms" name="terms" required>
                 <label for="terms">
                     Akceptuję regulamin i politykę prywatności.
                 </label>
             </div>
         </fieldset>
 
-        <!-- ================== PRZYCISKI ================== -->
+
         <div>
             <button type="submit">Wyślij formularz</button>
             <button type="reset">Wyczyść</button>
@@ -211,4 +156,5 @@
     </form>
 
 </body>
+
 </html>
