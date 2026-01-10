@@ -35,9 +35,11 @@
         <dt>DOCTYPE</dt>
         <dd>to deklaracja typu dokumentu, która informuje przeglądarkę o wersji HTML.</dd>
         <dt>Tag</dt>
-        <dd>to element składający się z nazwy, otoczony nawiasami ostrymi, np. p lub h1, który definiuje strukturę lub treść strony. </dd>
+        <dd>to element składający się z nazwy, otoczony nawiasami ostrymi, np. p lub h1, który definiuje strukturę lub
+            treść strony. </dd>
         <dt>Atrybut</dt>
-        <dd>to dodatkowa informacja lub właściwość dodana do tagu, określająca jego zachowanie lub wygląd (np. href w tagu a). </dd>
+        <dd>to dodatkowa informacja lub właściwość dodana do tagu, określająca jego zachowanie lub wygląd (np. href w
+            tagu a). </dd>
         <dt>HTML</dt>
         <dd>HyperText Markup Language - język znaczników używany do tworzenia stron internetowych.</dd>
         <dt>CSS</dt>
@@ -45,74 +47,78 @@
     </dl>
 
     <ol>
-    <li>element listy1</li>
-    <li>element listy2
-        <ol>
-            <li>element listy zagnieżdżonej</li>
-            <li>element listy zagnieżdżonej</li>
-        </ol>
-    </li>
-    <li>element listy3
-        <ol>
-            <li>element listy zagnieżdżonej</li>
-            <li>element listy zagnieżdżonej</li>
-        </ol>
-    </li>
-</ol>
+        <li>element listy1</li>
+        <li>element listy2
+            <ol>
+                <li>element listy zagnieżdżonej</li>
+                <li>element listy zagnieżdżonej</li>
+            </ol>
+        </li>
+        <li>element listy3
+            <ol>
+                <li>element listy zagnieżdżonej</li>
+                <li>element listy zagnieżdżonej</li>
+            </ol>
+        </li>
+    </ol>
 
 
-<table>
-    <thead>
-        <tr>
-            <th>Nazwa tagu</th>
-            <th>Przeznaczenie</th>
-            <th>Przykład użycia</th>
-            <th>Czy wymaga zamknięcia?</th>
-        </tr>
-  </thead>
+    <table>
+        <thead>
+            <tr>
+                <th>Nazwa tagu</th>
+                <th>Przeznaczenie</th>
+                <th>Przykład użycia</th>
+                <th>Czy wymaga zamknięcia?</th>
+            </tr>
+        </thead>
 
-  <tbody>
-        <tr>
-            <td><code>&lt;p&gt;</code></td>
-            <td>Tworzy akapit tekstu.</td>
-            <td><code>&lt;p&gt;To jest akapit tekstu.&lt;/p&gt;</code></td>
-            <td>Tak</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Tworzy akapit tekstu.</td>
+                <td><code>&lt;p&gt;To jest akapit tekstu.&lt;/p&gt;</code></td>
+                <td>Tak</td>
+            </tr>
 
-        <tr>
-            <td><code>&lt;a&gt;</code></td>
-            <td>Tworzy odnośnik (link) do innej strony lub sekcji.</td>
-            <td><code>&lt;a href="https://example.com"&gt;Kliknij mnie&lt;/a&gt;</code></td>
-            <td>Tak</td>
-        </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Tworzy odnośnik (link) do innej strony lub sekcji.</td>
+                <td><code>&lt;a href="https://example.com"&gt;Kliknij mnie&lt;/a&gt;</code></td>
+                <td>Tak</td>
+            </tr>
 
-        <tr>
-            <td><code>&lt;img&gt;</code></td>
-            <td>Wstawia obrazek na stronę.</td>
-            <td><code>&lt;img src="obraz.jpg" alt="Opis obrazka"&gt;</code></td>
-            <td>Nie</td>
-        </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Wstawia obrazek na stronę.</td>
+                <td><code>&lt;img src="obraz.jpg" alt="Opis obrazka"&gt;</code></td>
+                <td>Nie</td>
+            </tr>
 
-        <tr>
-            <td rowspan="2"><code>&lt;table&gt;</code> i elementy powiązane</td>
-            <td>Definiuje strukturę tabeli w HTML.</td>
-            <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
-            <td>Tak</td>
-        </tr>
-        <tr>
-            <td>Zawiera wiersze i komórki tabeli przy pomocy tagów <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>.</td>
-            <td><code>&lt;tr&gt;&lt;td&gt;Komórka&lt;/td&gt;&lt;/tr&gt;</code></td>
-            <td>Tak</td>
-        </tr>
-  </tbody>
+            <tr>
+                <td rowspan="2"><code>&lt;table&gt;</code> i elementy powiązane</td>
+                <td>Definiuje strukturę tabeli w HTML.</td>
+                <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+                <td>Tak</td>
+            </tr>
+            <tr>
+                <td>Zawiera wiersze i komórki tabeli przy pomocy tagów <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>,
+                    <code>&lt;td&gt;</code>.
+                </td>
+                <td><code>&lt;tr&gt;&lt;td&gt;Komórka&lt;/td&gt;&lt;/tr&gt;</code></td>
+                <td>Tak</td>
+            </tr>
+        </tbody>
 
-  <tfoot>
-        <tr>
-            <td colspan="4">Niektóre tagi HTML, takie jak <code>&lt;img&gt;</code> czy <code>&lt;br&gt;</code>, nie wymagają zamknięcia - są tzw. „void elements”.</td>
-        </tr>
-  </tfoot>
-</table>
+        <tfoot>
+            <tr>
+                <td colspan="4">Niektóre tagi HTML, takie jak <code>&lt;img&gt;</code> czy <code>&lt;br&gt;</code>, nie
+                    wymagają zamknięcia - są tzw. „void elements”.</td>
+            </tr>
+        </tfoot>
+    </table>
 
-
+    <script src="script3.js"></script>
 </body>
+
 </html>

@@ -1,69 +1,261 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Moja galeria multimedialna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
 </head>
-<body>
 
-    <h1>Moja galeria multimedialna</h1>
+<body id="top">
 
-    <!-- ================== SEKCJA OBRAZÓW ================== -->
-    <section>
-        <h2>Galeria obrazów</h2>
+    <!-- FIXED: pasek social media -->
+    <aside class="social-fixed" aria-label="Social media">
+        <a href="#" title="Instagram" aria-label="Instagram">IG</a>
+        <a href="#" title="TikTok" aria-label="TikTok">TT</a>
+        <a href="#" title="YouTube" aria-label="YouTube">YT</a>
+    </aside>
 
-        <!-- 3 obrazy za pomocą <img> -->
-        <img src="images/pejzaz1.jpg" alt="Górski pejzaż o zachodzie słońca" width="400" height="250">
-        <img src="images/miasto.jpg" alt="Panorama miasta nocą" width="400" height="250">
-        <img src="images/las.jpg" alt="Las oświetlony promieniami słońca" width="400" height="250" loading="lazy">
+    <!-- FIXED: powrót do góry -->
+    <a class="back-to-top" href="#top" aria-label="Powrót do góry">↑</a>
 
-        <!-- 2 obrazy za pomocą <figure> z podpisem -->
-        <figure>
-            <img src="images/morze.jpg" alt="Morze z delikatnymi falami" width="400" height="250">
-            <figcaption>Spokojne morze o poranku</figcaption>
-        </figure>
+    <!-- Nagłówek z tłem + overlay -->
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1>Moja galeria multimedialna</h1>
+            <p>Obrazy, wideo, audio i treści zewnętrzne w atrakcyjnej oprawie CSS.</p>
+        </div>
+    </header>
 
-        <figure>
-            <img src="images/jezioro.jpg" alt="Jezioro otoczone górami" width="400" height="250">
-            <figcaption>Jezioro położone w dolinie górskiej</figcaption>
-        </figure>
+    <main class="container">
 
-        <!--
-            Użyłem zwykłych <img> dla prostych ilustracji, które nie wymagają dodatkowego opisu,
-            natomiast <figure> + <figcaption> tam, gdzie obraz jest częścią treści i potrzebuje podpisu.
-            Atrybut loading="lazy" przy jednym z obrazów poprawia wydajność, bo wczytuje grafikę dopiero,
-            gdy użytkownik przewinie stronę w jej okolice.
-        -->
-    </section>
+        <section class="section">
+            <!-- STICKY: nagłówek sekcji -->
+            <div class="section__sticky">
+                <h2>Galeria obrazów</h2>
+            </div>
 
-    <hr>
+            <div class="grid">
+                <!-- KARTA 1 -->
+                <article class="card">
+                    <a class="card__link" href="#img1">
+                        <div class="card__media">
+                            <img src="images4/pejzaz.jpg" alt="Górski pejzaż" width="400" height="250">
+                            <span class="badge">Photo</span>
 
-    <!-- ================== SEKCJA WIDEO ================== -->
-    <section>
-        <h2>Galeria wideo</h2>
+                            <!-- Overlay na hover -->
+                            <div class="hover-overlay">
+                                <div class="hover-overlay__text">
+                                    Górski pejzaż — kliknij, aby powiększyć
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card__body">
+                        <h3>Pejzaż</h3>
+                        <p>Klasyczna karta z badge i overlay na hover.</p>
+                    </div>
+                </article>
 
-        <video controls width="640" height="360" poster="video/poster.jpg">
-            <source src="video/przykladowe-wideo.mp4" type="video/mp4">
-            <source src="video/przykladowe-wideo.webm" type="video/webm">
-            Twoja przeglądarka nie obsługuje elementu video. Proszę pobrać plik wideo bezpośrednio z serwera.
-        </video>
+                <!-- KARTA 2 -->
+                <article class="card">
+                    <a class="card__link" href="#img2">
+                        <div class="card__media">
+                            <img src="images4/miasto.jpg" alt="Ulica starego miasta" width="400" height="250">
+                            <span class="badge badge--alt">City</span>
+                            <div class="hover-overlay">
+                                <div class="hover-overlay__text">
+                                    Ulica starego miasta — kliknij, aby powiększyć
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card__body">
+                        <h3>Miasto</h3>
+                        <p>Różne badge i ten sam mechanizm pozycjonowania.</p>
+                    </div>
+                </article>
 
-        <!--
-            Użyłem elementu <video> z atrybutem controls, aby użytkownik mógł samodzielnie sterować odtwarzaniem.
-            Dodałem minimum dwa źródła (<source>) w różnych formatach (mp4, webm), żeby zwiększyć zgodność
-            z różnymi przeglądarkami. Tekst w środku <video> jest wyświetlany, gdy przeglądarka nie wspiera tego
-            elementu. Atrybut poster pokazuje miniaturkę przed uruchomieniem filmu.
-        -->
-    </section>
+                <!-- KARTA 3 -->
+                <article class="card">
+                    <a class="card__link" href="#img3">
+                        <div class="card__media">
+                            <img src="images4/las.jpg" alt="Las" width="400" height="250" loading="lazy">
+                            <span class="badge">Nature</span>
+                            <div class="hover-overlay">
+                                <div class="hover-overlay__text">
+                                    Las — kliknij, aby powiększyć
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card__body">
+                        <h3>Las</h3>
+                        <p>Lazy-loading + overlay hover.</p>
+                    </div>
+                </article>
 
-    <hr>
+                <!-- KARTA 4 (figure -> dalej semantycznie OK, ale jako karta) -->
+                <figure class="card">
+                    <a class="card__link" href="#img4">
+                        <div class="card__media">
+                            <img src="images4/morze.jpg" alt="Morze z delikatnymi falami" width="400" height="250">
+                            <span class="badge badge--alt">Sea</span>
+                            <div class="hover-overlay">
+                                <div class="hover-overlay__text">
+                                    Spokojne morze — kliknij, aby powiększyć
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <figcaption class="card__body">
+                        <h3>Morze</h3>
+                        <p>Spokojne morze o poranku</p>
+                    </figcaption>
+                </figure>
 
-    <!-- ================== SEKCJA AUDIO ================== -->
-    <section>
-        <h2>Galeria audio</h2>
+                <!-- KARTA 5 -->
+                <figure class="card">
+                    <a class="card__link" href="#img5">
+                        <div class="card__media">
+                            <img src="images4/jezioro.jpg" alt="Jezioro otoczone górami" width="400" height="250">
+                            <span class="badge">Lake</span>
+                            <div class="hover-overlay">
+                                <div class="hover-overlay__text">
+                                    Jezioro w dolinie — kliknij, aby powiększyć
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <figcaption class="card__body">
+                        <h3>Jezioro</h3>
+                        <p>Jezioro położone w dolinie górskiej</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-        <audio controls>
-            <source src="audio/przykladowy-utwor.mp3" type="audio/mpeg">
-            <source src="audio/przykladowy-utwor.ogg" type="audio/ogg">
-            Twoja przeglądarka nie obsługuje elementu audio. Proszę pobrać plik dźwiękowy bezpośrednio z serwera.
+        <section class="section">
+            <div class="section__sticky">
+                <h2>Galeria wideo</h2>
+            </div>
+
+            <div class="grid grid--media">
+                <article class="card">
+                    <div class="card__body">
+                        <h3>Wideo 1</h3>
+                        <p>Player w karcie, spójny wygląd.</p>
+                    </div>
+                    <div class="card__media card__media--plain">
+                        <video controls width="640" height="360" poster="video/poster.jpg">
+                            <source src="video4/video1.mp4" type="video/mp4">
+                            Twoja przeglądarka nie obsługuje elementu video.
+                        </video>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__body">
+                        <h3>Wideo 2</h3>
+                        <p>Drugi format dla kompatybilności.</p>
+                    </div>
+                    <div class="card__media card__media--plain">
+                        <video controls width="640" height="360" poster="video/poster.jpg">
+                            <source src="video4/video2.webm" type="video/webm">
+                            Twoja przeglądarka nie obsługuje elementu video.
+                        </video>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__sticky">
+                <h2>Galeria audio</h2>
+            </div>
+
+            <div class="grid grid--media">
+                <article class="card">
+                    <div class="card__body">
+                        <h3>Audio 1</h3>
+                        <p>Audio osadzone w karcie.</p>
+                    </div>
+                    <div class="card__media card__media--plain">
+                        <audio controls>
+                            <source src="audio4/audio1.mp3" type="audio/mpeg">
+                            Twoja przeglądarka nie obsługuje elementu audio.
+                        </audio>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__body">
+                        <h3>Audio 2</h3>
+                        <p>Alternatywny format.</p>
+                    </div>
+                    <div class="card__media card__media--plain">
+                        <audio controls>
+                            <source src="audio4/audio2.ogg" type="audio/ogg">
+                            Twoja przeglądarka nie obsługuje elementu audio.
+                        </audio>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__sticky">
+                <h2>Osadzona treść zewnętrzna</h2>
+            </div>
+
+            <article class="card">
+                <div class="card__body">
+                    <h3>YouTube</h3>
+                    <p>Iframe w kontenerze, spójnie z resztą layoutu.</p>
+                </div>
+                <div class="card__media card__media--plain">
+                    <div class="iframe-wrap">
+                        <iframe src="https://www.youtube.com/embed/s4BibernJxU?si=ud3O204asYH_ZEfy"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX CSS-only: :target -->
+    <div id="img1" class="lightbox">
+        <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
+        <img src="images4/pejzaz.jpg" alt="Górski pejzaż (powiększenie)">
+    </div>
+
+    <div id="img2" class="lightbox">
+        <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
+        <img src="images4/miasto.jpg" alt="Ulica starego miasta (powiększenie)">
+    </div>
+
+    <div id="img3" class="lightbox">
+        <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
+        <img src="images4/las.jpg" alt="Las (powiększenie)">
+    </div>
+
+    <div id="img4" class="lightbox">
+        <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
+        <img src="images4/morze.jpg" alt="Morze (powiększenie)">
+    </div>
+
+    <div id="img5" class="lightbox">
+        <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
+        <img src="images4/jezioro.jpg" alt="Jezioro (powiększenie)">
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>

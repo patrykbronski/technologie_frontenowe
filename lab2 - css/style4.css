@@ -264,7 +264,7 @@ audio {
 .lightbox {
 	position: fixed;
 	inset: 0;
-	z-index: 999; /* warstwa nad wszystkim */
+	z-index: 999; /* nad wszystkim */
 	display: none;
 	place-items: center;
 	padding: 22px;
@@ -323,5 +323,5 @@ audio {
 	}
 	.social-fixed {
 		display: none;
-	} /* na małych ekranach może przeszkadzać */
+	}
 }
