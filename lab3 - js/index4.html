@@ -10,17 +10,14 @@
 
 <body id="top">
 
-    <!-- FIXED: pasek social media -->
     <aside class="social-fixed" aria-label="Social media">
         <a href="#" title="Instagram" aria-label="Instagram">IG</a>
         <a href="#" title="TikTok" aria-label="TikTok">TT</a>
         <a href="#" title="YouTube" aria-label="YouTube">YT</a>
     </aside>
 
-    <!-- FIXED: powrót do góry -->
     <a class="back-to-top" href="#top" aria-label="Powrót do góry">↑</a>
 
-    <!-- Nagłówek z tłem + overlay -->
     <header class="hero">
         <div class="hero__overlay"></div>
         <div class="hero__content">
@@ -32,20 +29,17 @@
     <main class="container">
 
         <section class="section">
-            <!-- STICKY: nagłówek sekcji -->
             <div class="section__sticky">
                 <h2>Galeria obrazów</h2>
             </div>
 
             <div class="grid">
-                <!-- KARTA 1 -->
                 <article class="card">
                     <a class="card__link" href="#img1">
                         <div class="card__media">
                             <img src="images4/pejzaz.jpg" alt="Górski pejzaż" width="400" height="250">
                             <span class="badge">Photo</span>
 
-                            <!-- Overlay na hover -->
                             <div class="hover-overlay">
                                 <div class="hover-overlay__text">
                                     Górski pejzaż — kliknij, aby powiększyć
@@ -59,7 +53,6 @@
                     </div>
                 </article>
 
-                <!-- KARTA 2 -->
                 <article class="card">
                     <a class="card__link" href="#img2">
                         <div class="card__media">
@@ -78,7 +71,6 @@
                     </div>
                 </article>
 
-                <!-- KARTA 3 -->
                 <article class="card">
                     <a class="card__link" href="#img3">
                         <div class="card__media">
@@ -97,7 +89,6 @@
                     </div>
                 </article>
 
-                <!-- KARTA 4 (figure -> dalej semantycznie OK, ale jako karta) -->
                 <figure class="card">
                     <a class="card__link" href="#img4">
                         <div class="card__media">
@@ -116,7 +107,6 @@
                     </figcaption>
                 </figure>
 
-                <!-- KARTA 5 -->
                 <figure class="card">
                     <a class="card__link" href="#img5">
                         <div class="card__media">
@@ -229,7 +219,6 @@
 
     </main>
 
-    <!-- LIGHTBOX CSS-only: :target -->
     <div id="img1" class="lightbox">
         <a class="lightbox__close" href="#top" aria-label="Zamknij">×</a>
         <img src="images4/pejzaz.jpg" alt="Górski pejzaż (powiększenie)">
