@@ -1,0 +1,259 @@
+:root {
+	font-family:
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		Arial,
+		sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #f6f7fb;
+	color: #111;
+}
+
+.app {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 14px 16px;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #e6e6ef;
+}
+
+.title {
+	margin: 0;
+	font-size: 20px;
+}
+
+.muted {
+	color: #666;
+	margin: 6px 0 0 0;
+}
+
+.badge {
+	background: #111;
+	color: white;
+	padding: 6px 10px;
+	border-radius: 999px;
+	font-size: 12px;
+}
+
+.card {
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #e6e6ef;
+	padding: 14px 16px;
+}
+
+.cardTitle {
+	margin: 0 0 10px 0;
+	font-size: 16px;
+}
+
+.btn {
+	border: 1px solid #d9d9e6;
+	background: #fff;
+	padding: 8px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #f3f3f8;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.btn.active {
+	border-color: #111;
+}
+
+.btn.danger {
+	border-color: #ffb6b6;
+}
+
+.select {
+	border: 1px solid #d9d9e6;
+	background: #fff;
+	padding: 8px 10px;
+	border-radius: 8px;
+}
+
+.input {
+	border: 1px solid #d9d9e6;
+	background: #fff;
+	padding: 8px 10px;
+	border-radius: 8px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.input.invalid {
+	border-color: #ff6b6b;
+}
+
+.form {
+	display: grid;
+	gap: 10px;
+}
+
+.formRow {
+	display: grid;
+	gap: 6px;
+}
+
+.label {
+	font-size: 12px;
+	color: #444;
+}
+
+.helpRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.errorText {
+	color: #ff3b3b;
+	font-size: 12px;
+}
+
+.controls {
+	display: grid;
+	grid-template-columns: 1fr 220px 1fr 160px auto;
+	gap: 10px;
+	align-items: center;
+}
+
+.filters {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.stats {
+	margin-top: 10px;
+	display: flex;
+	gap: 14px;
+	flex-wrap: wrap;
+	color: #333;
+	font-size: 14px;
+}
+
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 10px;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 18px auto 1fr auto;
+	gap: 10px;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ececf5;
+	border-radius: 10px;
+}
+
+.itemMain {
+	display: grid;
+	gap: 8px;
+}
+
+.itemMeta {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.itemActions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.text.done {
+	text-decoration: line-through;
+	color: #666;
+}
+
+.catBadge {
+	font-size: 12px;
+	padding: 4px 8px;
+	border-radius: 999px;
+	border: 1px solid #d9d9e6;
+	width: fit-content;
+}
+
+.cat-Praca {
+	background: #eef2ff;
+}
+
+.cat-Dom {
+	background: #ecfdf3;
+}
+
+.cat-Zakupy {
+	background: #fff7ed;
+}
+
+.cat-Inne {
+	background: #f3f4f6;
+}
+
+.quote {
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #e6e6ef;
+	padding: 14px 16px;
+	display: grid;
+	gap: 8px;
+}
+
+.quoteText {
+	margin: 0;
+}
+
+.topRow {
+	display: grid;
+	gap: 10px;
+}
+
+.skeleton {
+	display: grid;
+	gap: 10px;
+}
+
+.skeleton .line {
+	height: 14px;
+	border-radius: 8px;
+	background: #eee;
+}
+
+.errorBox {
+	display: grid;
+	gap: 8px;
+	padding: 10px;
+	border: 1px solid #ffb6b6;
+	border-radius: 10px;
+}
